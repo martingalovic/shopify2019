@@ -1,19 +1,18 @@
-# README
+# Shopify Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Documentation can be found here: https://shopify2019.docs.apiary.io
+* Ruby version: 2.4.1
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
+* System dependencies: 
 
 * Configuration
 
-* Database creation
+* Database creation: 
+    * `rake db:create`
 
 * Database initialization
+    * `rake db:migrate`
+    * `rake db:seed` will create test products
 
 * How to run the test suite
 

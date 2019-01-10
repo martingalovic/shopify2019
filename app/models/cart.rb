@@ -18,9 +18,9 @@ class Cart < ApplicationRecord
   # @return [CartItem] created or updated CartItem
   def add_product(product, qty = 1)
     qty = qty.to_i
-    qty = 1 if qty <= 0
 
-    return false unless product.is_a?(Product)
+    raise Error::CartItem::InsufficientProductQty if qty <= 0
+    raise Error::ShopifyError.new("product Argument should be instance of Product class") unless product.is_a?(Product)
 
     item = items.where(:product_id => product.id).first_or_create
     item.increment!(:qty, qty)

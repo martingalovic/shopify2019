@@ -16,14 +16,10 @@ class Cart < ApplicationRecord
   # Adds products to cart
   # @param [Product] product
   # @return [CartItem] created or updated CartItem
-  def add_product(product, qty = 1)
-    qty = qty.to_i
+  def add_product(product)
+    raise Error::CartItem::ProductTypeError unless product.is_a?(Product)
 
-    raise Error::CartItem::InsufficientProductQty if qty <= 0
-    raise Error::ShopifyError.new("product Argument should be instance of Product class") unless product.is_a?(Product)
-
-    item = items.where(:product_id => product.id).first_or_create
-    item.increment!(:qty, qty)
+    items.create({:product_id => product.id})
   end
 
   # Checks whether cart is completed

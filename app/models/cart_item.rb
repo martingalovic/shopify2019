@@ -3,9 +3,9 @@ class CartItem < ApplicationRecord
   belongs_to :cart
   belongs_to :product
 
-  # Decreases inventory of products by self.qty
+  # Decreases inventory of products by 1
   # @return [Product]
   def decrease_inventory
-    product.decrease_inventory(qty)
+    product.decrease_inventory
   end
 end

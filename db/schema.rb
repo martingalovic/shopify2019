@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_09_214855) do
+ActiveRecord::Schema.define(version: 2019_01_09_200253) do
 
   create_table "cart_items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "cart_id"
     t.bigint "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "qty", default: 0, null: false, unsigned: true
     t.index ["cart_id", "product_id"], name: "index_cart_items_on_cart_id_and_product_id"
     t.index ["cart_id"], name: "index_cart_items_on_cart_id"
     t.index ["product_id"], name: "index_cart_items_on_product_id"

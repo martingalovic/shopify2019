@@ -4,9 +4,8 @@ class Api::V1::CartItemsController < ApplicationController
   # Add new product to cart - Purchase
   def create
     @product = Product.find(params[:product_id])
-    qty = params[:qty] || 1
 
-    render json: {success: true}, status: :ok if @cart.add_product( @product, qty )
+    render json: {success: true}, status: :ok if @cart.add_product( @product )
   end
 
   # Delete product from cart
@@ -18,6 +17,6 @@ class Api::V1::CartItemsController < ApplicationController
 
   private
     def set_cart
-      @cart = Cart.find_by_token(params[:cart_token])
+      @cart = Cart.find_by_token!(params[:cart_token])
     end
 end

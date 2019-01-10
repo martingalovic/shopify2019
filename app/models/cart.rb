@@ -1,10 +1,25 @@
 class Cart < ApplicationRecord
-  has_many :items, class_name: "CartItem"
+  TOKEN_LENGTH = 32
 
-  # Adds product to cart
+  # Relationships
+  has_many :items, class_name: "CartItem", dependent: :destroy
+
+  # Scopes
+  scope :not_completed, -> { where('completed_at IS NULL') }
+
+  # Validation
+  validates :token, presence: true, length: { is: TOKEN_LENGTH }
+
+  # Callbacks
+  after_save :update_inventory, if: :is_completed?
+
+  # Adds products to cart
   # @param [Product] product
   # @return [CartItem] created or updated CartItem
   def add_product(product, qty = 1)
+    qty = qty.to_i
+    qty = 1 if qty <= 0
+
     return false unless product.is_a?(Product)
 
     item = items.where(:product_id => product.id).first_or_create
@@ -24,11 +39,12 @@ class Cart < ApplicationRecord
     update(completed_at: at || Time.now)
   end
 
-  # Updates inventory of each product in cart
-  # @return [self]
-  def update_inventory
-    cart_items.each(&:decrease_inventory)
-    self
-  end
+  private
+    # Updates inventory of each products in cart
+    # @return [self]
+    def update_inventory
+      cart_items.each(&:decrease_inventory)
+      self
+    end
 
 end

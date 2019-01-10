@@ -2,7 +2,7 @@ class CreateCartItems < ActiveRecord::Migration[5.2]
   def change
     create_table :cart_items do |t|
       t.references :cart
-      t.references :products
+      t.references :product
 
       t.timestamps
     end

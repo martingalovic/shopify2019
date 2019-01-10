@@ -39,7 +39,9 @@ class Cart < ApplicationRecord
     # Updates inventory of each products in cart
     # @return [self]
     def update_inventory
-      cart_items.each(&:decrease_inventory)
+      products_ids = items.distinct(:product_id).pluck(:product_id)
+      abort products_ids.to_json
+      Product.where('id', items.pluck('product_id')).update({inventory_count: 'inventory_count - 1'})
       self
     end
 

@@ -1,5 +1,5 @@
 class Api::V1::CartsController < ApplicationController
-  before_action :set_cart, only: [:show, :update, :delete]
+  before_action :set_cart, only: [:show, :complete, :destroy]
 
   # Show contents of cart and total dollar amount
   def show
@@ -12,21 +12,22 @@ class Api::V1::CartsController < ApplicationController
   end
 
   # Update cart is used for completing cart
-  def update
-    if params[:complete].present?
+  def complete
       @cart.complete
-      render :show
-    end
+      render json: {
+          success: true,
+          message: "You have completed your cart, goods are on their way! Thank you for shopping with us."
+      }, status: :ok
   end
 
   # Delete cart
-  def delete
+  def destroy
     @cart.destroy!
   end
 
   private
     def set_cart
       # We should select only carts, which are not completed, because we shouldn't modify completed carts
-      @cart = Cart.not_completed.find_by_token(params[:token])
+      @cart = Cart.not_completed.find_by_token!(params[:token])
     end
 end

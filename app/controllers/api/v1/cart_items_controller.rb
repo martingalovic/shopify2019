@@ -5,14 +5,14 @@ class Api::V1::CartItemsController < ApplicationController
   def create
     @product = Product.find(params[:product_id])
 
-    render json: {success: true}, status: :ok if @cart.add_product( @product )
+    render json: {success: true}, status: :ok if @cart.add_product(@product)
   end
 
   # Delete product from cart
-  def delete
+  def destroy
     @cart_item = @cart.items.find(params[:id])
 
-    render json: {success: true}, status: :ok if @cart_item.destroy!
+    render json: {success: true}, status: :ok if @cart_item.destroy
   end
 
   private

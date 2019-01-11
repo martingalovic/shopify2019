@@ -3,7 +3,7 @@ class Api::V1::ProductsController < ApplicationController
 
   # Show all products, use params[:available] to display only products with inventory count > 0
   def index
-    @products = params[:available].present? ? Product.available : Product.all
+    @products = params[:available] == 'true' ? Product.available : Product.all
   end
 
   # Show product

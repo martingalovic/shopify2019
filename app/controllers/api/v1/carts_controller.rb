@@ -28,6 +28,6 @@ class Api::V1::CartsController < ApplicationController
   private
     def set_cart
       # We should select only carts, which are not completed, because we shouldn't modify completed carts
-      @cart = Cart.not_completed.find_by_token!(params[:token])
+      @cart = Cart.find_by_token!(params[:token])
     end
 end

@@ -1,6 +1,6 @@
 module Error
   module CartItem
-    class ProductTypeError
+    class ProductTypeError < ShopifyError
     end
   end
 end

@@ -7,7 +7,14 @@ class Api::V1::CartsController < ApplicationController
 
   # Creates a new cart - returns token
   def create
-    @cart = Cart.create!({:token => SecureRandom.base58(Cart::TOKEN_LENGTH)})
+    attributes = {:token => SecureRandom.base58(Cart::TOKEN_LENGTH)}
+
+    if user = current_user
+      @cart = user.carts.create! attributes
+    else
+      @cart = Cart.create! attributes
+    end
+
     render :show, status: :created
   end
 
@@ -29,6 +36,6 @@ class Api::V1::CartsController < ApplicationController
   private
     def set_cart
       # We should select only carts, which are not completed, because we shouldn't modify completed carts
-      @cart = Cart.find_by_token!(params[:token])
+      @cart = Cart.find_by_token_and_user(params[:cart_token], current_user)
     end
 end

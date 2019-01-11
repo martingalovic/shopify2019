@@ -16,7 +16,7 @@ class Api::V1::CartItemsController < ApplicationController
   end
 
   private
-  def set_cart
-      @cart = Cart.find_by_token!(params[:token])
+    def set_cart
+      @cart = Cart.find_by_token_and_user(params[:cart_token], current_user)
     end
 end

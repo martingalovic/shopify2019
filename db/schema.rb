@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_09_200253) do
+ActiveRecord::Schema.define(version: 2019_01_11_175221) do
 
   create_table "cart_items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "cart_id"
@@ -24,11 +24,13 @@ ActiveRecord::Schema.define(version: 2019_01_09_200253) do
 
   create_table "carts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "token"
+    t.bigint "user_id"
     t.timestamp "completed_at"
     t.decimal "total", precision: 13, scale: 2, unsigned: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["token", "completed_at"], name: "index_carts_on_token_and_completed_at"
+    t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
   create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -40,6 +42,15 @@ ActiveRecord::Schema.define(version: 2019_01_09_200253) do
     t.index ["inventory_count"], name: "index_products_on_inventory_count"
   end
 
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "username", limit: 30
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["username"], name: "index_users_on_username", unique: true
+  end
+
   add_foreign_key "cart_items", "carts", on_update: :cascade, on_delete: :cascade
   add_foreign_key "cart_items", "products", on_update: :cascade, on_delete: :nullify
+  add_foreign_key "carts", "users", on_update: :cascade, on_delete: :nullify
 end

@@ -3,6 +3,7 @@ class Cart < ApplicationRecord
 
   # Relationships
   has_many :items, class_name: "CartItem", dependent: :destroy
+  belongs_to :user
 
   # Scopes
   scope :not_completed, -> { where('completed_at IS NULL') }
@@ -12,6 +13,20 @@ class Cart < ApplicationRecord
 
   # Callbacks
   after_save :update_inventory, if: :is_completed?
+
+  # Find cart based on token and user
+  # If Cart doesn't belong to user then no verification will be done
+  # Otherwise we will return cart only if cart.user.id == user.id otherwise raise an error
+  def self.find_by_token_and_user(token, _user)
+    _cart = self.find_by_token!(token)
+
+    # Check if cart was created by logged in user
+    if _cart.user
+      raise Error::UnauthorizedError unless _user && _user.id == _cart.user.id
+    end
+
+    _cart
+  end
 
   # Adds products to cart
   # @param [Product] product

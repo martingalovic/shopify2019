@@ -8,4 +8,11 @@ class CartItem < ApplicationRecord
   def decrease_inventory
     product.decrease_inventory
   end
+
+  # Use this method if you want to prevent deleting the item in case cart was already completed
+  def remove_from_cart
+    raise Error::Cart::AlreadyCompletedError if cart.is_completed?
+
+    destroy
+  end
 end

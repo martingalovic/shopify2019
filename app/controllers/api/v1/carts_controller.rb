@@ -8,7 +8,7 @@ class Api::V1::CartsController < ApplicationController
   # Creates a new cart - returns token
   def create
     @cart = Cart.create!({:token => SecureRandom.base58(Cart::TOKEN_LENGTH)})
-    render :show
+    render :show, status: :created
   end
 
   # Update cart is used for completing cart
@@ -23,6 +23,7 @@ class Api::V1::CartsController < ApplicationController
   # Delete cart
   def destroy
     @cart.destroy!
+    render json: {success: true}, status: :ok
   end
 
   private

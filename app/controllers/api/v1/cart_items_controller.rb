@@ -12,11 +12,11 @@ class Api::V1::CartItemsController < ApplicationController
   def destroy
     @cart_item = @cart.items.find(params[:id])
 
-    render json: {success: true}, status: :ok if @cart_item.destroy
+    render json: {success: true}, status: :ok if @cart_item.remove_from_cart
   end
 
   private
-    def set_cart
-      @cart = Cart.find_by_token!(params[:cart_token])
+  def set_cart
+      @cart = Cart.find_by_token!(params[:token])
     end
 end

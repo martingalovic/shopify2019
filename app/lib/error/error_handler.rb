@@ -21,7 +21,7 @@ module Error
       end
 
       def record_not_found(_e)
-        render json: {error: 'not_found - '+_e.to_s }, status: 404
+        render json: {error: :not_found }, status: 404
       end
 
   end

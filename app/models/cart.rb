@@ -75,6 +75,12 @@ class Cart < ApplicationRecord
            })
   end
 
+  # Override super method to raise an error if cart has been completed
+  def destroy!
+    raise Error::Cart::AlreadyCompletedError if is_completed?
+    super
+  end
+
   private
     # Updates inventory of each products in cart
     # @return [self]

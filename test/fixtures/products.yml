@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  price: 9.99
-  inventory_count: 1
+  title: Sticker
+  price: 10
+  inventory_count: 100
 
 two:
-  title: MyString
-  price: 9.99
-  inventory_count: 1
+  title: Car
+  price: 100000
+  inventory_count: 5

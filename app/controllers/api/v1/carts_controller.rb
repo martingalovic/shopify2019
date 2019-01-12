@@ -1,4 +1,4 @@
-class Api::V1::CartsController < ApplicationController
+class Api::V1::CartsController < Api::ApiController
   before_action :set_cart, only: [:show, :complete, :destroy]
 
   # Show contents of cart and total dollar amount

@@ -1,4 +1,4 @@
-class Api::V1::ProductsController < ApplicationController
+class Api::V1::ProductsController < Api::ApiController
   before_action :set_product, only: [:show]
 
   # Show all products, use params[:available] to display only products with inventory count > 0

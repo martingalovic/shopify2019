@@ -3,7 +3,7 @@ class Cart < ApplicationRecord
 
   # Relationships
   has_many :items, class_name: "CartItem", dependent: :destroy
-  belongs_to :user
+  belongs_to :user, optional: true
 
   # Scopes
   scope :not_completed, -> { where('completed_at IS NULL') }

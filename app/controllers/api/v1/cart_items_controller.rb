@@ -1,4 +1,4 @@
-class Api::V1::CartItemsController < ApplicationController
+class Api::V1::CartItemsController < Api::ApiController
   before_action :set_cart
 
   # Add new product to cart - Purchase

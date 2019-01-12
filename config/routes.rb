@@ -8,8 +8,10 @@ Rails.application.routes.draw do
       resources :products, only: [:index, :show]
 
       # carts
-      resources :carts, only: [:show, :create, :destroy]
+      resources :carts, only: [:create]
+      match 'carts/show', to: 'carts#show', via: :get
       match 'carts/complete', to: 'carts#complete', via: :post
+      match 'carts/destroy', to: 'carts#destroy', via: :delete
 
       # cart items
       resources :cart_items, only: [:create, :destroy]

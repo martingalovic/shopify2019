@@ -1,4 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+completed:
+  token: completed
+  user: null
+  completed_at: <%= Time.now %>
+
+uncompleted:
+  token: uncompleted
+  user: null
+  completed_at: null
+
+uncompleted_with_items:
+  token: uncompleted_with_items
+  user: null
+  completed_at: null
 
 one:
   token: token_guest

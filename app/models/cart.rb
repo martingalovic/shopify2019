@@ -34,6 +34,7 @@ class Cart < ApplicationRecord
   def add_product(product)
     raise Error::Cart::AlreadyCompletedError if is_completed?
     raise Error::CartItem::ProductTypeError unless product.is_a?(Product)
+    raise Error::Product::OutOfStockError if product.is_out_of_stock?
 
     # We only want one same product in cart at the time
     # We could simple change `where` to `create` and remove `first_or_create`
@@ -63,11 +64,16 @@ class Cart < ApplicationRecord
     !completed_at.nil?
   end
 
+  def is_empty?
+    items.size == 0
+  end
+
   # Marks cart as completed
   # @param [nil|Time] at - When was the cart completed, default: Time.now
   # @return [self]
   def complete(at = nil)
     raise Error::Cart::AlreadyCompletedError if is_completed?
+    raise Error::Cart::EmptyCartError if is_empty?
 
     update({
                completed_at: at || Time.now,

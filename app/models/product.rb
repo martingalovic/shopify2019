@@ -3,6 +3,10 @@ class Product < ApplicationRecord
 
   scope :available, -> { where('inventory_count > 0') }
 
+  def is_out_of_stock?
+    inventory_count <= 0
+  end
+
   # @param [Integer] by | Amount of which the inventory will be decreased
   # @return [self]
   def decrease_inventory(by = 1)

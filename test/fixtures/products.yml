@@ -9,3 +9,8 @@ two:
   title: Car
   price: 100000
   inventory_count: 5
+
+out_of_stock:
+  title: BFCM Item
+  price: 12.99
+  inventory_count: 0

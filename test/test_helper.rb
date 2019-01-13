@@ -7,4 +7,9 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def response_body
+    return {} if @response.body.empty?
+
+    JSON.parse(@response.body)
+  end
 end

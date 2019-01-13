@@ -4,72 +4,86 @@ class Api::V1::CartItemsControllerTest < ActionDispatch::IntegrationTest
   test "cart items controller should create with valid product and uncompleted unassigned cart for guest" do
     post api_v1_cart_items_url, params: {cart_token: guest_cart_uncompleted.token, product_id: product.id }
     assert_response :success
+    assert_equal true, response_body['success']
   end
 
   test "cart items controller should not create with valid product and completed unassigned cart for guest" do
     post api_v1_cart_items_url, params: { cart_token: guest_cart_completed.token, product_id: product.id }
     assert_response 422
+    assert_equal "cart_already_completed", response_body['error']
   end
 
   test "cart items controller should not create with valid product and uncompleted assigned cart for guest" do
     post api_v1_cart_items_url, params: {cart_token: user_cart_uncompleted.token, product_id: product.id }
     assert_response 401
+    assert_equal "unauthorized", response_body['error']
   end
 
   test "cart items controller should not create with valid product and completed assigned cart for guest" do
     post api_v1_cart_items_url, params: { cart_token: user_cart_completed.token, product_id: product.id }
     assert_response 401
+    assert_equal "unauthorized", response_body['error']
   end
 
   test "cart items controller should not create with product out of stock for guest" do
     post api_v1_cart_items_url, params: {cart_token: guest_cart_uncompleted.token, product_id: product_out_of_stock.id }
     assert_response 422
+    assert_equal "out_of_stock", response_body['error']
   end
 
   test "cart items controller should not create with product out of stock for logged in user" do
     post api_v1_cart_items_url, params: {cart_token: user_cart_uncompleted.token, product_id: product_out_of_stock.id }, headers: authenticated_header
     assert_response 422
+    assert_equal "out_of_stock", response_body['error']
   end
 
   test "cart items controller should not create for assigned cart for guest" do
     post api_v1_cart_items_url, params: {cart_token: user_cart_uncompleted.token, product_id: product.id }
     assert_response 401
+    assert_equal "unauthorized", response_body['error']
   end
 
   test "cart items controller should not create for assigned cart for wrong logged in user" do
     post api_v1_cart_items_url, params: {cart_token: user_cart_uncompleted.token, product_id: product.id }, headers: authenticated_header(:two)
     assert_response 401
+    assert_equal "unauthorized", response_body['error']
   end
 
 
   test "cart items controller should destroy from uncompleted unassigned cart for guest" do
     delete api_v1_cart_item_url(cart_item_guest_uncompleted), params: { cart_token: cart_item_guest_uncompleted.cart.token }
     assert_response :success
+    assert_equal true, response_body['success']
   end
 
   test "cart items controller should not destroy from completed unassigned cart for guest" do
     delete api_v1_cart_item_url(cart_item_guest_completed), params: { cart_token: cart_item_guest_completed.cart.token }
     assert_response 422
+    assert_equal "cart_already_completed", response_body['error']
   end
 
   test "cart items controller should destroy from uncompleted assigned cart for logged in user" do
     delete api_v1_cart_item_url(cart_item_user_uncompleted), params: { cart_token: cart_item_user_uncompleted.cart.token }, headers: authenticated_header
     assert_response :success
+    assert_equal true, response_body['success']
   end
 
   test "cart items controller should not destroy from completed assigned cart for logged in user" do
     delete api_v1_cart_item_url(cart_item_guest_completed), params: { cart_token: cart_item_guest_completed.cart.token }, headers: authenticated_header
     assert_response 422
+    assert_equal "cart_already_completed", response_body['error']
   end
 
   test "cart items controller should not destroy from assigned cart for guest" do
     delete api_v1_cart_item_url(cart_item_user_uncompleted), params: { cart_token: cart_item_user_uncompleted.cart.token }
     assert_response 401
+    assert_equal "unauthorized", response_body['error']
   end
 
   test "cart items controller should not destroy from assigned cart for wrong logged in user" do
     delete api_v1_cart_item_url(cart_item_user_uncompleted), params: { cart_token: cart_item_user_uncompleted.cart.token }, headers: authenticated_header(:two)
     assert_response 401
+    assert_equal "unauthorized", response_body['error']
   end
 
   private

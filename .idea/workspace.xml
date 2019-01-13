@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e682af5-7f3d-4133-890f-887973fa4805" name="Default Changelist" comment="">
+    <list default="true" id="6e682af5-7f3d-4133-890f-887973fa4805" name="Default Changelist" comment="tests for carts, cart items, products, user_token, updated fixtures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/cart.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/api/v1/cart_items_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/api/v1/cart_items_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/api/v1/carts_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/api/v1/carts_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/api/v1/product_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/api/v1/product_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/cart_items.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/cart_items.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/carts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/carts.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/products.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/products.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/cart_item_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/cart_item_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/cart_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/cart_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/product_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/product_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/user_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/user_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -31,29 +23,33 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_add_product_should_add_product_to_items_if_product_is_valid__shopify2019.rcov" NAME="test_cart_model_method_add_product_should_add_product_to_items_if_product_is_valid: shopify2019 Coverage Results" MODIFIED="1547320923404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_create_should_return_new_cart_to_guest__shopify2019.rcov" NAME="test_carts_controller_create_should_return_new_cart_to_guest: shopify2019 Coverage Results" MODIFIED="1547283591523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_destroy_from_uncompleted_unassigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_destroy_from_uncompleted_unassigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547319107145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_create_should_return_new_cart_to_guest__shopify2019.rcov" NAME="test_carts_controller_create_should_return_new_cart_to_guest: shopify2019 Coverage Results" MODIFIED="1547368597177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_create_with_product_out_of_stock__shopify2019.rcov" NAME="test_cart_items_controller_should_not_create_with_product_out_of_stock: shopify2019 Coverage Results" MODIFIED="1547318559857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed__shopify2019.rcov" NAME="test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed: shopify2019 Coverage Results" MODIFIED="1547322864524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_should_return_unauthorized_for_wrong_user__shopify2019.rcov" NAME="test_carts_controller_should_return_unauthorized_for_wrong_user: shopify2019 Coverage Results" MODIFIED="1547285135636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_should_get_list_only_available__shopify2019.rcov" NAME="test_should_get_list_only_available: shopify2019 Coverage Results" MODIFIED="1547244005090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_destroy_should_raise_error_if_cart_is_already_completed__shopify2019.rcov" NAME="test_cart_model_destroy_should_raise_error_if_cart_is_already_completed: shopify2019 Coverage Results" MODIFIED="1547322614292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_return_assigned_cart_contents_to_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_show_should_return_assigned_cart_contents_to_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547284479678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_return_assigned_cart_contents_to_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_show_should_return_assigned_cart_contents_to_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547368205461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_not_return_assigned_cart_contents_to_wrong_user__shopify2019.rcov" NAME="test_carts_controller_show_should_not_return_assigned_cart_contents_to_wrong_user: shopify2019 Coverage Results" MODIFIED="1547285216639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_destroy_from_completed_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_not_destroy_from_completed_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547319051730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_not_return_assigned_cart_contents_to_guest__shopify2019.rcov" NAME="test_carts_controller_show_should_not_return_assigned_cart_contents_to_guest: shopify2019 Coverage Results" MODIFIED="1547283780641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_not_return_assigned_cart_contents_to_guest__shopify2019.rcov" NAME="test_carts_controller_show_should_not_return_assigned_cart_contents_to_guest: shopify2019 Coverage Results" MODIFIED="1547367980225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_assigned_cart_to_wrong_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_assigned_cart_to_wrong_user: shopify2019 Coverage Results" MODIFIED="1547285265899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@All_tests_in_v1__shopify2019.rcov" NAME="All tests in v1: shopify2019 Coverage Results" MODIFIED="1547243755521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_destroy_assigned_uncompleted_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_destroy_assigned_uncompleted_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547284962594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_products_controller_index_only_available_should_return_list__shopify2019.rcov" NAME="test_products_controller_index_only_available_should_return_list: shopify2019 Coverage Results" MODIFIED="1547369351246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_destroy_from_assigned_cart_for_wrong_logged_in_user__shopify2019.rcov" NAME="test_cart_items_controller_should_not_destroy_from_assigned_cart_for_wrong_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547319324455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@Run_test__Api__V1__CartsControllerTest___shopify2019.rcov" NAME="Run test 'Api::V1::CartsControllerTest': shopify2019 Coverage Results" MODIFIED="1547368602202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_return_assigned_cart_contents_to_user__shopify2019.rcov" NAME="test_carts_controller_show_should_return_assigned_cart_contents_to_user: shopify2019 Coverage Results" MODIFIED="1547284093413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@Run_test__product_controller_test___shopify2019.rcov" NAME="Run test 'product_controller_test': shopify2019 Coverage Results" MODIFIED="1547243986239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_complete_assigned_uncompleted_cart_for_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_complete_assigned_uncompleted_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547284499964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_create_should_return_new_cart_to_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_create_should_return_new_cart_to_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547284475415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_complete_assigned_uncompleted_cart_for_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_complete_assigned_uncompleted_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547368248299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@Run_test__user_token_controller_test___shopify2019.rcov" NAME="Run test 'user_token_controller_test': shopify2019 Coverage Results" MODIFIED="1547369705577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_create_for_assigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_not_create_for_assigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547319407292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_create_should_return_new_cart_to_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_create_should_return_new_cart_to_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547368185117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_should_not_create_token_if_wrong_credentials__shopify2019.rcov" NAME="test_should_not_create_token_if_wrong_credentials: shopify2019 Coverage Results" MODIFIED="1547243722605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_unassigned_completed_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_unassigned_completed_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547284833230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_unassigned_completed_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_unassigned_completed_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547368446622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_create_with_product_out_of_stock_for_logged_in_user__shopify2019.rcov" NAME="test_cart_items_controller_should_not_create_with_product_out_of_stock_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547318614286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_products_controller_index_should_return_list__shopify2019.rcov" NAME="test_products_controller_index_should_return_list: shopify2019 Coverage Results" MODIFIED="1547369235122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_add_product_should_raise_out_of_stock_error_if_invalid_product_is_out_of_stock__shopify2019.rcov" NAME="test_cart_model_method_add_product_should_raise_out_of_stock_error_if_invalid_product_is_out_of_stock: shopify2019 Coverage Results" MODIFIED="1547321251531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_destroy_from_assigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_not_destroy_from_assigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547319294222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_find_by_user_and_token_should_return_unassigned_cart_for_logged_in_user__shopify2019.rcov" NAME="test_cart_model_method_find_by_user_and_token_should_return_unassigned_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547320483167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
@@ -65,22 +61,23 @@
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_destroy_assigned_completed_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_destroy_assigned_completed_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547284965957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_destroy_assigned_uncompleted_cart_for_wrong_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_destroy_assigned_uncompleted_cart_for_wrong_user: shopify2019 Coverage Results" MODIFIED="1547317744671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_assigned_uncompleted_cart_to_wrong_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_assigned_uncompleted_cart_to_wrong_user: shopify2019 Coverage Results" MODIFIED="1547285285933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_assigned_completed_cart_for_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_assigned_completed_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547284515525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_find_by_user_and_token_should_return_assigned_cart_for_logged_in_user__shopify2019.rcov" NAME="test_cart_model_method_find_by_user_and_token_should_return_assigned_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547320504936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_destroy_assigned_uncompleted_cart_for_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_destroy_assigned_uncompleted_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547284637324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_assigned_completed_cart_for_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_assigned_completed_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547368378138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_create_with_valid_product_and_uncompleted_unassigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_create_with_valid_product_and_uncompleted_unassigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547318222576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_return_unassigned_cart_contents_to_guest__shopify2019.rcov" NAME="test_carts_controller_show_should_return_unassigned_cart_contents_to_guest: shopify2019 Coverage Results" MODIFIED="1547283600486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_destroy_assigned_uncompleted_cart_for_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_destroy_assigned_uncompleted_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547368570212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_return_unassigned_cart_contents_to_guest__shopify2019.rcov" NAME="test_carts_controller_show_should_return_unassigned_cart_contents_to_guest: shopify2019 Coverage Results" MODIFIED="1547367975944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@Run_test__carts_controller_test___shopify2019.rcov" NAME="Run test 'carts_controller_test': shopify2019 Coverage Results" MODIFIED="1547285295824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_create_with_valid_product_and_completed_assigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_not_create_with_valid_product_and_completed_assigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547318271076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_add_product_should_raise_product_type_error_if_invalid_product__shopify2019.rcov" NAME="test_cart_model_method_add_product_should_raise_product_type_error_if_invalid_product: shopify2019 Coverage Results" MODIFIED="1547321071530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_assigned_completed_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_assigned_completed_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547284882480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_create_for_assigned_cart_for_wrong_logged_in_user__shopify2019.rcov" NAME="test_cart_items_controller_should_not_create_for_assigned_cart_for_wrong_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547319423795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_assigned_completed_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_assigned_completed_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547368089498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_add_product_should_add_product_to_uncompleted_cart_items_if_product_is_valid__shopify2019.rcov" NAME="test_cart_model_method_add_product_should_add_product_to_uncompleted_cart_items_if_product_is_valid: shopify2019 Coverage Results" MODIFIED="1547321165404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_create_with_valid_product_and_uncompleted_assigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_not_create_with_valid_product_and_uncompleted_assigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547318258894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_destroy_from_completed_assigned_cart_for_logged_in_user__shopify2019.rcov" NAME="test_cart_items_controller_should_not_destroy_from_completed_assigned_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547319189476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_product_model_method_is_out_of_stock_should_return_true_if_product_out_of_stock__shopify2019.rcov" NAME="test_product_model_method_is_out_of_stock_should_return_true_if_product_out_of_stock: shopify2019 Coverage Results" MODIFIED="1547319711911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_complete_unassigned_uncompleted_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_complete_unassigned_uncompleted_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547284818431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_destroy_unassigned_completed_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_destroy_unassigned_completed_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547284957879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@Run_test__cart_items_controller_test___shopify2019.rcov" NAME="Run test 'cart_items_controller_test': shopify2019 Coverage Results" MODIFIED="1547368966853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_complete_unassigned_uncompleted_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_complete_unassigned_uncompleted_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547368026639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_destroy_unassigned_completed_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_destroy_unassigned_completed_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547368129979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_complete_should_raise_empty_cart_error_if_cart_is_empty__shopify2019.rcov" NAME="test_cart_model_method_complete_should_raise_empty_cart_error_if_cart_is_empty: shopify2019 Coverage Results" MODIFIED="1547322164633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_find_by_user_and_token_should_not_return_assigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_model_method_find_by_user_and_token_should_not_return_assigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547320752169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_destroy_from_completed_unassigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_not_destroy_from_completed_unassigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547319113360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
@@ -91,17 +88,18 @@
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_not_create_with_valid_product_and_completed_unassigned_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_not_create_with_valid_product_and_completed_unassigned_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547318242203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_should_get_show__shopify2019.rcov" NAME="test_should_get_show: shopify2019 Coverage Results" MODIFIED="1547243972945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_destroy_assigned_completed_cart_for_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_destroy_assigned_completed_cart_for_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547284641468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_assigned_uncompleted_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_assigned_uncompleted_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547284879227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_complete_assigned_uncompleted_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_complete_assigned_uncompleted_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547368463704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_create_should_return_new_cart_to_user__shopify2019.rcov" NAME="test_carts_controller_create_should_return_new_cart_to_user: shopify2019 Coverage Results" MODIFIED="1547284041074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_should_create_token__shopify2019.rcov" NAME="test_should_create_token: shopify2019 Coverage Results" MODIFIED="1547243580956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019.rcov" NAME="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019 Coverage Results" MODIFIED="1547282325538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_destroy_unassigned_uncompleted_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_destroy_unassigned_uncompleted_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547284893350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019.rcov" NAME="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019 Coverage Results" MODIFIED="1547369902573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_destroy_unassigned_uncompleted_cart_for_guest__shopify2019.rcov" NAME="test_carts_controller_complete_should_destroy_unassigned_uncompleted_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547368127149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_complete_should_not_destroy_assigned_completed_cart_for_wrong_user__shopify2019.rcov" NAME="test_carts_controller_complete_should_not_destroy_assigned_completed_cart_for_wrong_user: shopify2019 Coverage Results" MODIFIED="1547317747558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_add_product_should_raise_already_completed_error_if_cart_is_completed__shopify2019.rcov" NAME="test_cart_model_method_add_product_should_raise_already_completed_error_if_cart_is_completed: shopify2019 Coverage Results" MODIFIED="1547321011639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_item_model_method_remove_from_cart_should_return_true_if_cart_is_not_completed__shopify2019.rcov" NAME="test_cart_item_model_method_remove_from_cart_should_return_true_if_cart_is_not_completed: shopify2019 Coverage Results" MODIFIED="1547322838168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@All_tests_in_test__shopify2019.rcov" NAME="All tests in test: shopify2019 Coverage Results" MODIFIED="1547369957245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_complete_should_set_completed_at_and_total_column_if_cart_is_valid__shopify2019.rcov" NAME="test_cart_model_method_complete_should_set_completed_at_and_total_column_if_cart_is_valid: shopify2019 Coverage Results" MODIFIED="1547321883418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
-    <SUITE FILE_PATH="coverage/shopify2019@test_user_token_controller_should_return_token__shopify2019.rcov" NAME="test_user_token_controller_should_return_token: shopify2019 Coverage Results" MODIFIED="1547282342365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_model_method_add_product_should_raise_product_type_error_if_invalid_product_is_provided__shopify2019.rcov" NAME="test_cart_model_method_add_product_should_raise_product_type_error_if_invalid_product_is_provided: shopify2019 Coverage Results" MODIFIED="1547321155202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
+    <SUITE FILE_PATH="coverage/shopify2019@test_user_token_controller_should_return_token__shopify2019.rcov" NAME="test_user_token_controller_should_return_token: shopify2019 Coverage Results" MODIFIED="1547369411437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_cart_items_controller_should_destroy_from_uncompleted_cart_for_guest__shopify2019.rcov" NAME="test_cart_items_controller_should_destroy_from_uncompleted_cart_for_guest: shopify2019 Coverage Results" MODIFIED="1547319031312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_product_model_method_decrease_inventory_should_decrease_by_specified_amount__shopify2019.rcov" NAME="test_product_model_method_decrease_inventory_should_decrease_by_specified_amount: shopify2019 Coverage Results" MODIFIED="1547319857431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
     <SUITE FILE_PATH="coverage/shopify2019@test_carts_controller_show_should_return_unassigned_cart_contents_to_logged_in_user__shopify2019.rcov" NAME="test_carts_controller_show_should_return_unassigned_cart_contents_to_logged_in_user: shopify2019 Coverage Results" MODIFIED="1547284483190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify2019" />
@@ -113,39 +111,66 @@
     <favorites_list name="shopify2019" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/cart.rb">
+        <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/cart_items_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-183">
-              <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+            <state relative-caret-position="208">
+              <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/product_controller_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/user_token_controller_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/models/cart_item_test.rb">
+        <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/carts_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            <state relative-caret-position="245">
+              <caret line="167" column="7" lean-forward="true" selection-start-line="167" selection-start-column="7" selection-end-line="167" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/fixtures/cart_items.yml">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/products.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="14" selection-start-line="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="46">
+              <caret line="2" selection-start-line="2" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/cart_item.rb">
+        <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="230">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/cart_items_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -178,6 +203,7 @@
       <find>token</find>
       <find>{</find>
       <find>add_prd</find>
+      <find>assert_equal &quot;cart_already_completed&quot;, response_body['error']</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/controllers/product_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/product_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/product/index.json.jbuilder" />
@@ -209,7 +234,6 @@
         <option value="$PROJECT_DIR$/app/views/api/v1/cart_items/_cart_item.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/products/index.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/lib/error/error_handler.rb" />
-        <option value="$PROJECT_DIR$/app/models/cart_item.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/api/api_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
@@ -218,25 +242,27 @@
         <option value="$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/knock-2.1.1/lib/knock/authenticable.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/users.yml" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/cart_items_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/products_controller.rb" />
-        <option value="$PROJECT_DIR$/test/controllers/api/v1/user_token_controller_test.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/carts_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/test/controllers/api/v1/carts_controller_test.rb" />
-        <option value="$PROJECT_DIR$/test/controllers/api/v1/product_controller_test.rb" />
         <option value="$PROJECT_DIR$/app/models/product.rb" />
         <option value="$PROJECT_DIR$/app/lib/error/product/out_of_stock.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/products.yml" />
-        <option value="$PROJECT_DIR$/test/controllers/api/v1/cart_items_controller_test.rb" />
         <option value="$PROJECT_DIR$/test/models/user_test.rb" />
         <option value="$PROJECT_DIR$/test/models/product_test.rb" />
         <option value="$PROJECT_DIR$/app/lib/error/product/out_of_stock_error.rb" />
-        <option value="$PROJECT_DIR$/app/models/cart.rb" />
         <option value="$PROJECT_DIR$/app/lib/error/cart/empty_cart_error.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/carts.yml" />
         <option value="$PROJECT_DIR$/test/fixtures/cart_items.yml" />
         <option value="$PROJECT_DIR$/test/models/cart_test.rb" />
         <option value="$PROJECT_DIR$/test/models/cart_item_test.rb" />
+        <option value="$PROJECT_DIR$/app/models/cart.rb" />
+        <option value="$PROJECT_DIR$/app/models/cart_item.rb" />
+        <option value="$PROJECT_DIR$/test/controllers/api/v1/cart_items_controller_test.rb" />
+        <option value="$PROJECT_DIR$/test/fixtures/products.yml" />
+        <option value="$PROJECT_DIR$/test/controllers/api/v1/product_controller_test.rb" />
+        <option value="$PROJECT_DIR$/test/test_helper.rb" />
+        <option value="$PROJECT_DIR$/test/controllers/api/v1/user_token_controller_test.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/products_controller.rb" />
+        <option value="$PROJECT_DIR$/test/controllers/api/v1/carts_controller_test.rb" />
       </list>
     </option>
   </component>
@@ -247,11 +273,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="22" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1658" />
-    <option name="height" value="987" />
+    <option name="width" value="1680" />
+    <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -261,7 +286,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,74 +297,34 @@
             <path>
               <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopify2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopify2019" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,7 +354,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_cart_item_model_method_decrease_inventory_should_decrease_product_inventory_count: shopify2019">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.All tests in test: shopify2019">
     <configuration name="Development: shopify2019" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="shopify2019" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -465,7 +450,37 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="test_cart_item_model_method_decrease_inventory_should_decrease_product_inventory_count: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration name="All tests in test: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <module name="shopify2019" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/test" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/{*_test,test_*,*_spec}.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run test 'user_token_controller_test': shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <module name="shopify2019" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
@@ -485,9 +500,39 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/cart_item_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/controllers/api/v1/user_token_controller_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_cart_item_model_method_decrease_inventory_should_decrease_product_inventory_count" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_products_controller_index_only_available_should_return_list: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <module name="shopify2019" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/controllers/api/v1/product_controller_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_products_controller_index_only_available_should_return_list" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -495,7 +540,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <module name="shopify2019" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
@@ -515,9 +560,9 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/cart_item_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/controllers/api/v1/user_token_controller_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_user_token_controller_should_not_return_token_if_wrong_credentials" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -525,7 +570,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_cart_item_model_method_remove_from_cart_should_return_true_if_cart_is_not_completed: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration name="test_user_token_controller_should_return_token: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <module name="shopify2019" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
@@ -545,69 +590,9 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/cart_item_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/controllers/api/v1/user_token_controller_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_cart_item_model_method_remove_from_cart_should_return_true_if_cart_is_not_completed" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_cart_model_destroy_should_destroy_if_cart_is_uncompleted: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <module name="shopify2019" />
-      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/cart_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_cart_model_destroy_should_destroy_if_cart_is_uncompleted" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_cart_model_destroy_should_raise_error_if_cart_is_already_completed: shopify2019" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <module name="shopify2019" />
-      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/cart_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_cart_model_destroy_should_raise_error_if_cart_is_already_completed" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_user_token_controller_should_return_token" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -617,11 +602,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_cart_item_model_method_decrease_inventory_should_decrease_product_inventory_count: shopify2019" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed: shopify2019" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_cart_item_model_method_remove_from_cart_should_return_true_if_cart_is_not_completed: shopify2019" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_cart_model_destroy_should_destroy_if_cart_is_uncompleted: shopify2019" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_cart_model_destroy_should_raise_error_if_cart_is_already_completed: shopify2019" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: shopify2019" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'user_token_controller_test': shopify2019" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_user_token_controller_should_return_token: shopify2019" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_products_controller_index_only_available_should_return_list: shopify2019" />
       </list>
     </recent_temporary>
   </component>
@@ -637,7 +622,8 @@
       <option name="presentableId" value="Default" />
       <updated>1547062265774</updated>
       <workItem from="1547062271052" duration="28365000" />
-      <workItem from="1547236799632" duration="14310000" />
+      <workItem from="1547236799632" duration="16298000" />
+      <workItem from="1547367413570" duration="2517000" />
     </task>
     <task id="LOCAL-00001" summary="Updated README">
       <created>1547068256413</created>
@@ -667,50 +653,57 @@
       <option name="project" value="LOCAL" />
       <updated>1547285378512</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tests for carts, cart items, products, user_token, updated fixtures">
+      <created>1547322975614</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547322975614</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_cart_model_method_calculate_total_should_match_products_price__shopify2019 - 2019.01.12 at 20h 48m 04s.xml">
-      <configuration name="test_cart_model_method_calculate_total_should_match_products_price: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019 - 2019.01.13 at 09h 56m 04s.xml">
+      <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_model_method_calculate_total_should_match_products_price__shopify2019 - 2019.01.12 at 20h 48m 23s.xml">
-      <configuration name="test_cart_model_method_calculate_total_should_match_products_price: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019 - 2019.01.13 at 09h 56m 08s.xml">
+      <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_model_method_calculate_total_should_match_products_price__shopify2019 - 2019.01.12 at 20h 49m 00s.xml">
-      <configuration name="test_cart_model_method_calculate_total_should_match_products_price: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019 - 2019.01.13 at 09h 56m 49s.xml">
+      <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_model_method_calculate_total_should_match_products_price__shopify2019 - 2019.01.12 at 20h 49m 16s.xml">
-      <configuration name="test_cart_model_method_calculate_total_should_match_products_price: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019 - 2019.01.13 at 09h 56m 57s.xml">
+      <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_model_destroy_should_raise_error_if_cart_is_already_completed__shopify2019 - 2019.01.12 at 20h 50m 16s.xml">
-      <configuration name="test_cart_model_destroy_should_raise_error_if_cart_is_already_completed: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019 - 2019.01.13 at 09h 57m 26s.xml">
+      <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_model_destroy_should_destroy_if_cart_is_uncompleted__shopify2019 - 2019.01.12 at 20h 51m 00s.xml">
-      <configuration name="test_cart_model_destroy_should_destroy_if_cart_is_uncompleted: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019 - 2019.01.13 at 09h 57m 36s.xml">
+      <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_model_destroy_should_destroy_if_cart_is_uncompleted__shopify2019 - 2019.01.12 at 20h 51m 06s.xml">
-      <configuration name="test_cart_model_destroy_should_destroy_if_cart_is_uncompleted: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019 - 2019.01.13 at 09h 57m 59s.xml">
+      <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_item_model_method_remove_from_cart_should_return_true_if_cart_is_not_completed__shopify2019 - 2019.01.12 at 20h 53m 59s.xml">
-      <configuration name="test_cart_item_model_method_remove_from_cart_should_return_true_if_cart_is_not_completed: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_user_token_controller_should_not_return_token_if_wrong_credentials__shopify2019 - 2019.01.13 at 09h 58m 23s.xml">
+      <configuration name="test_user_token_controller_should_not_return_token_if_wrong_credentials: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed__shopify2019 - 2019.01.12 at 20h 54m 07s.xml">
-      <configuration name="test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="All_tests_in_test__shopify2019 - 2019.01.13 at 09h 58m 39s.xml">
+      <configuration name="All tests in test: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed__shopify2019 - 2019.01.12 at 20h 54m 25s.xml">
-      <configuration name="test_cart_item_model_method_remove_from_cart_should_raise_error_if_cart_is_already_completed: shopify2019" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="All_tests_in_test__shopify2019 - 2019.01.13 at 09h 59m 02s.xml">
+      <configuration name="All tests in test: shopify2019" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42762000" />
+    <option name="totallyTimeSpent" value="47267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="988" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5016949" side_tool="true" weight="0.21184371" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49830508" visible="true" weight="0.21184371" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49830508" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3284091" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -719,7 +712,7 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.29431817" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -737,44 +730,10 @@
     <MESSAGE value="Updated README" />
     <MESSAGE value="error_handler - dont display error message if not found" />
     <MESSAGE value="fixtures, carts controller tests, updated routes and parent class for api/v1/* controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixtures, carts controller tests, updated routes and parent class for api/v1/* controllers" />
+    <MESSAGE value="tests for carts, cart items, products, user_token, updated fixtures" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests for carts, cart items, products, user_token, updated fixtures" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.2.2/lib/active_support/core_ext/enumerable.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/cart_items/_cart_item.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/products/index.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/rack-2.0.6/lib/rack/utils.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1114">
-          <caret line="580" column="51" selection-start-line="580" selection-start-column="34" selection-end-line="580" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190111175221_add_user_id_to_carts.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -841,20 +800,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/user_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/user_controller.rb" />
     <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -866,13 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-136">
           <caret line="110" column="62" selection-start-line="110" selection-start-column="62" selection-end-line="110" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/products_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="54" selection-start-column="54" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -893,55 +832,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.2.2/lib/action_dispatch/testing/assertions/response.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/carts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.rb" />
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/cart_items_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/cart_items_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="39" column="142" selection-start-line="39" selection-start-column="142" selection-end-line="39" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/carts_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="142" column="27" lean-forward="true" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/user_token_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="100" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
         </state>
       </provider>
     </entry>
@@ -956,13 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/product_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -987,38 +875,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.2.2/lib/active_support/test_case.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/error/unauthorized_error.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/error/cart_item/product_type_error.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/error/product/out_of_stock_error.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/error/cart/already_completed_error.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1043,24 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/products.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/models/cart_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-129">
           <caret line="96" column="15" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cart.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1071,17 +917,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cart_item.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/models/cart_item_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cart.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="85" column="44" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cart_item.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.2.2/lib/action_dispatch/testing/assertions/response.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-278">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/application_system_test_case.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/error/cart/already_completed_error.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/error/unauthorized_error.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/carts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.2.2/lib/action_dispatch/testing/integration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="599" column="8" selection-start-line="599" selection-start-column="8" selection-end-line="599" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.2.2/lib/rails/test_help.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/error/product/out_of_stock_error.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/minitest-5.11.3/lib/minitest/assertions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="623" column="8" selection-start-line="623" selection-start-column="8" selection-end-line="623" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.2.2/lib/active_support/test_case.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/products/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/cart_items_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/products.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/cart_items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/product_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/products_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/user_token_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/api/v1/carts_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="167" column="7" lean-forward="true" selection-start-line="167" selection-start-column="7" selection-end-line="167" selection-end-column="7" />
         </state>
       </provider>
     </entry>

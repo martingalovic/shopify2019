@@ -84,8 +84,7 @@ class CartTest < ActiveSupport::TestCase
   test "cart model method calculate_total should match products price" do
     cart = uncompleted_cart_with_items
 
-    calculated_manual = 0.to_f
-    cart.items.each { |item| calculated_manual += item.product.price.to_f }
+    calculated_manual = cart.items.map { |item| item.product.price.to_f }.reduce(:+)
 
     assert_equal calculated_manual, cart.calculate_total
   end

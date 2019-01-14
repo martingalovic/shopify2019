@@ -1,6 +1,9 @@
 # Shopify Challenge
 
-Documentation can be found here: https://shopify2019.docs.apiary.io
+**Documentation** can be found here: https://shopify2019.docs.apiary.io
+
+**Though process:**  [HERE](thought_process.md)
+
 * Ruby version: 2.4.1
 
 * System dependencies: 
